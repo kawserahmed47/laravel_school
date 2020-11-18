@@ -18,3 +18,9 @@
 Route::get('/', 'HomeController@index')->name('index');
 Route::get('/dashboard', 'AdminController@index')->name('dashboard');
 
+
+
+// Route::resource('sharks', 'sharkController');
+
+Route::resource('/create', 'UnitTypeController');
+Route::resource('/unit','UnitController');
