@@ -24,3 +24,4 @@ Route::get('/dashboard', 'AdminController@index')->name('dashboard');
 
 Route::resource('/create', 'UnitTypeController');
 Route::resource('/unit','UnitController');
+Route::resource('/page','PageController');

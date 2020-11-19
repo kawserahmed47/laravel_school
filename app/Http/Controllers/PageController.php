@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Page;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -13,7 +13,8 @@ class PageController extends Controller
      */
     public function index()
     {
-        //
+        $data['pages']=Page::all();
+        return view('pages.view',$data);
     }
 
     /**
